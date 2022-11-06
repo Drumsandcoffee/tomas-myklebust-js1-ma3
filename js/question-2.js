@@ -25,7 +25,7 @@ async function getGames() {
             if(i === 8){
                 break;
             }
-            loaderAnimation
+            
             resultsContainer.innerHTML +=`
             <div class="results">
                 <span class="name">${games[i].name}</span>
