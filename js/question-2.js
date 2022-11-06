@@ -14,7 +14,7 @@ async function getGames() {
         console.log();
 
         const games = data.results || [];
-
+        loaderAnimation.innerHTML = "";
         resultsContainer.innerHTML = "";
 
         for( let i = 0; i < games.length; i++) {
@@ -25,7 +25,7 @@ async function getGames() {
             if(i === 8){
                 break;
             }
-            loaderAnimation.innerHTML = "";
+            loaderAnimation
             resultsContainer.innerHTML +=`
             <div class="results">
                 <span class="name">${games[i].name}</span>
@@ -33,7 +33,7 @@ async function getGames() {
                 <span class="number_tags">${games[i].tags.length}</span>
             </div>
             `;
-
+            
         }
         }catch(error) {
             console.log(error);
