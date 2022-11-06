@@ -14,7 +14,7 @@ async function getGames() {
         console.log();
 
         const games = data.results || [];
-        loaderAnimation.innerHTML = "";
+       
         resultsContainer.innerHTML = "";
 
         for( let i = 0; i < games.length; i++) {
